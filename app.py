@@ -1,13 +1,7 @@
 import streamlit as st
 import pandas as pd
-import streamlit as st
-import pandas as pd
 from PIL import Image
 import time
-import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 # Security
 #passlib,hashlib,bcrypt,scrypt
