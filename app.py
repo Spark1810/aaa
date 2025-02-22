@@ -150,7 +150,6 @@ elif choice == 'Prediction':
 
     st.title("Check your Dementia status...")
     df = pd.read_csv(r"oasis_longitudinal.csv")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     # ================================================
     df = df.loc[df['Visit'] == 1]
     # use first visit data only because of the analysis
