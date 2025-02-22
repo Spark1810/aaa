@@ -254,12 +254,12 @@ elif choice == 'Prediction':
     # ============================================================================================================================================    PREDICTION
     exang = st.sidebar.selectbox('Select Your Algorithm',['Simple Linear Regression',"Logistic Regression","SVM"] )
     
-    gender = st.sidebar.selectbox(
+    gender = st.selectbox(
         "Gender",
         ("Female", "Male")
     )
     gender = 1 if gender == "Male" else 2
-    age = st.sidebar.selectbox(
+    age = st.selectbox(
         "Age",
         ('18 to 24', '25 to 29', '30 to 34', '35 to 39', '40 to 44', '45 to 49', '50 to 54', '55 to 59', '60 to 64',
          '65 to 69', '70 to 74', '75 to 79', '80 or older')
@@ -290,12 +290,12 @@ elif choice == 'Prediction':
         age = 12
     else:
         age = 13
-    EDUC = st.sidebar.slider("Years of Education", max_value=30)
-    MMSE = st.sidebar.slider("MMSE Value", max_value=40)
-    SES = st.sidebar.slider("SES Value", max_value=10)
-    eTIV = st.sidebar.slider("eTIV Value", max_value=2040)
-    nWBV = st.sidebar.number_input("nWBV Value")
-    ASF = st.sidebar.number_input("ASF Value")
+    EDUC = st.slider("Years of Education", max_value=30)
+    MMSE = st.slider("MMSE Value", max_value=40)
+    SES = st.slider("SES Value", max_value=10)
+    eTIV = st.slider("eTIV Value", max_value=2040)
+    nWBV = st.number_input("nWBV Value")
+    ASF = st.number_input("ASF Value")
     import numpy as np
     import matplotlib.pyplot as plt
     import pandas as pd
