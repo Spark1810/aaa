@@ -32,7 +32,6 @@ elif choice == 'Statistics':
 
     st.title("Wanna Clarify about your Alzheimer status ?")
     df = pd.read_csv("oasis_longitudinal.csv")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     # ================================================
     df = df.loc[df['Visit'] == 1]
     # use first visit data only because of the analysis
